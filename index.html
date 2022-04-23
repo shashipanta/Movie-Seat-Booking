@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Seat Booking</title>
+</head>
+<body>
+    <div class="movie-container">
+        <section class="movie-picker">
+            <label for="movie-name">Pick a movie</label>
+            <select name="movie-opt" id="movie" >
+                <option value="20">Avengers ($20)</option>
+                <option value="40">How to Train your Dragon? ($40)</option>
+                <option value="12">Hulk ($12)</option>
+                <option value="35">Death Note ($35)</option>
+            </select>
+
+        </section>
+        <!-- Indicators  -->
+        <section class="indicator">
+            
+            <div class="indicator-container">
+                <label for="indicators">Seats Available</label>
+                <button class="seat btn-available" id="available"></button>
+                <div class="container">
+                    <span class="msg" id="available-no">0</span>
+                    <span class="sel-msg" id="sel-msg"></span>
+                    <span class="msg" id="total-available-no"></span>
+
+                </div>
+            </div>
+            
+            <div class="indicator-container">
+                <label for="indicators">Your Selection</label>   
+                <button class="seat btn-active" id="selected"></button>
+                <span class="msg" id="selected-no">0</span>
+            </div>
+
+            <div class="indicator-container">
+                <label for="indicators">Seats Not Available</label>
+                <button class="seat btn-occupied" id="occupied"></button>
+                <span class="msg" id="occupied-no"></span>
+            </div>
+            
+        </section>
+
+        <div class="aside__container">
+            
+        <!-- Movie Screen -->
+            
+            <div class="movie-screen">
+                <img src="" alt="" class="poster" id="poster">
+            </div>
+     
+        
+        <!-- Seats -->
+        <section class="seat-container">
+
+            <!-- Row A -->
+            <label for="rowA" id="rowA">A</label>
+            <div class="row" id="rowA">
+                <div class="wing-left" id="wing-left"></div>
+                    <button class="seat" id="A1"></button>
+                <div class="wing-right" id="wing-right"></div>
+                <button class="seat" id="A2"></button>
+                <button class="seat" id="A3"></button>
+                <button class="seat" id="A4"></button>
+                <button class="seat" id="A5"></button>
+                <button class="seat" id="A6"></button>
+                <button class="seat" id="A7"></button>
+            </div>
+            <!-- Row B -->
+            <label for="rowB" id="rowB">B</label>
+            <div class="row" id="rowB">
+                <button class="seat" id="B1"></button>
+                <button class="seat" id="B2"></button>
+                <button class="seat" id="B3"></button>
+                <button class="seat" id="B4"></button>
+                <button class="seat" id="B5"></button>
+                <button class="seat" id="B6"></button>
+                <button class="seat" id="B7"></button>
+            </div>
+            <!-- Row C -->
+            <label for="rowC" id="rowC">C</label>
+            <div class="row" id="rowC">
+                <button class="seat" id="C1"></button>
+                <button class="seat" id="C2"></button>
+                <button class="seat" id="C3"></button>
+                <button class="seat" id="C4"></button>
+                <button class="seat" id="C5"></button>
+                <button class="seat" id="C6"></button>
+                <button class="seat" id="C7"></button>
+            </div>
+            <!-- Row D -->
+            <label for="rowD" id="rowD">D</label>
+            <div class="row" id="rowD">
+                <button class="seat" id="D1"></button>
+                <button class="seat" id="D2"></button>
+                <button class="seat" id="D3"></button>
+                <button class="seat" id="D4"></button>
+                <button class="seat" id="D5"></button>
+                <button class="seat" id="D6"></button>
+                <button class="seat" id="D7"></button>
+            </div>
+            <!-- Row E -->
+            <label for="rowE" id="rowE">E</label>
+            <div class="row" id="rowE">
+                <button class="seat" id="E1"></button>
+                <button class="seat" id="E2"></button>
+                <button class="seat" id="E3"></button>
+                <button class="seat" id="E4"></button>
+                <button class="seat" id="E5"></button>
+                <button class="seat" id="E6"></button>
+                <button class="seat" id="E7"></button>
+            </div>
+        </section>
+
+        <!-- Movie Screen -->
+
+            
+            <div class="movie-screen">
+                <img src="" alt="" class="poster" id="poster">
+            </div>
+
+
+    </div>
+
+        <section class="information">
+            <table>
+                <tr>
+                    <td>Movie Choosen</td>
+                    <td>:</td>
+                    <td><span class="msg" id="movie-name">N\A</span></td>
+                </tr>
+                <tr>
+                    <td>Price per Seat</td>
+                    <td>:</td>
+                    <td><span class="msg" id="per-unit-price">N\A</span></td>
+                </tr>
+                <tr>
+                    <td>Total Cost</td>
+                    <td>:</td>
+                    <td><span class="msg" id="total-price">N\A</span></td>
+                </tr>
+                
+            </table>
+            <!-- <p class="msg">Movie Choosen  : <span class="msg" id="movie-name">N\A</span></p>
+            <p class="msg">Price per seat : <span class="msg" id="movie-name">N\A</span></p>
+            <p class="msg">: <span class="msg" id="movie-name">N\A</span></p> -->
+        </section>
+        
+
+        <!-- JavaScript -->
+        <script src="app.js"></script>
+        
+    </div>
+</body>
+</html>
